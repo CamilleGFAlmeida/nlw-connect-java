@@ -59,7 +59,7 @@ O projeto segue a organização tradicional do Spring Boot, adotando a separaç�
 - **Visualizar ranking de indicações de um usuário específico**  
   **(GET)** `/subscription/{prettyName}/ranking/{userId}`
 
-## ▶️ Como Configurar e Executar o Projeto
+## 💻 Como Configurar e Executar o Projeto
 
 ### 🔹 Pré-requisitos
 Antes de começar, certifique-se de ter instalado:
