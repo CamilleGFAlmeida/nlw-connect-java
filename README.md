@@ -1,42 +1,43 @@
-# NLW Connect Java - Rocketseat
+# Evento NLW Connect Java
 
-## 📈 Projeto Desenvolvido
+## 📍 Sobre
 
-Durante o intensivo de tecnologia, foi desenvolvido um sistema de inscrições em eventos, onde os usuários podem se inscrever, gerar links de indicação e acompanhar um ranking de indicações.
+Este projeto foi desenvolvido durante o intensivo de trilhas da Rocketseat e tem como objetivo gerenciar inscrições em eventos. Os usuários podem se inscrever, gerar links de indicação e acompanhar um ranking baseado nas indicações realizadas.
 
-## 🚀 Tecnologias
+## 🚀 Tecnologias Utilizadas
 
-Foram utilizadas as seguintes tecnologias:
+O projeto foi desenvolvido com as seguintes tecnologias:
 
 - **Java 17**
 - **Spring Boot 3.4.2**
 - **Maven**
+- **MySQL**
 
-### Dependências utilizadas:
+### 📦 Dependências
 
 - Spring Web
 - Spring Boot DevTools
 - Spring Data JPA
 - MySQL Driver
 
-## 💡 Estrutura do Projeto
+## 🗂 Arquitetura do Projeto
 
-O projeto segue a organização tradicional do Spring Boot, adotando a separação de responsabilidades.
+O projeto segue a organização tradicional do Spring Boot, adotando a separação de responsabilidades para melhor manutenção e escalabilidade.
 
-**Padrão em camadas**: Model, Controller, Service, Repository, Padrão DTO.
+**Padrão em camadas**: Model, Controller, Service, Repository, DTO.
 
-### Diagrama Entidade-Relacionamento:
+### 📊 Diagrama Entidade-Relacionamento
 
 ![Diagrama ER](https://github.com/user-attachments/assets/a8b8265c-bf10-465a-a984-89a6209dd913)
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
 - 📌 **Inscrição**: Usuários podem se inscrever em eventos informando nome e e-mail.
 - 🔗 **Geração de Link de Indicação**: Cada inscrito pode gerar um link de indicação único.
 - 📊 **Ranking de Indicações**: Exibe um ranking baseado no número de indicações bem-sucedidas.
 - 👥 **Visualização de Indicações**: Cada usuário pode ver quantas pessoas se inscreveram usando seu link.
 
-## 🌐 Rotas da API
+## 🌐 Endpoints da API
 
 ### 🎟️ Eventos
 
@@ -58,21 +59,28 @@ O projeto segue a organização tradicional do Spring Boot, adotando a separaç�
 - **Visualizar ranking de indicações de um usuário específico**  
   **(GET)** `/subscription/{prettyName}/ranking/{userId}`
 
-## 💻 Como Rodar o Projeto
+## ▶️ Como Configurar e Executar o Projeto
 
-Para executar o projeto localmente, siga os passos abaixo:
+### 🔹 Pré-requisitos
+Antes de começar, certifique-se de ter instalado:
+- [Java 17](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+- [MySQL](https://dev.mysql.com/downloads/)
+- [Maven](https://maven.apache.org/)
+- Uma IDE como [IntelliJ](https://www.jetbrains.com/idea/) ou [Eclipse](https://www.eclipse.org/)
 
-1. Clone o repositório:
+### 🔹 Passos para execução
+
+1. **Clone o repositório**
 
     ```bash
-    git clone --branch aula3 --single-branch https://github.com/CamilleGFAlmeida/nlw-connect-java.git
+    git clone --branch main --single-branch https://github.com/CamilleGFAlmeida/nlw-connect-java.git
     ```
 
-2. Importe o projeto na sua IDE (Eclipse, IntelliJ, STS, Visual Studio):
+2. **Importe o projeto na sua IDE**
 
     - Selecione **Import > Import Maven Projects**
 
-3. Configure o banco de dados:
+3. **Configure o banco de dados**
 
     - Edite o arquivo `application.properties` e adapte o valor de `spring.datasource.password` conforme sua configuração local.
     - No MySQL, crie o schema do banco de dados:
@@ -81,11 +89,20 @@ Para executar o projeto localmente, siga os passos abaixo:
       CREATE SCHEMA db_events;
       ```
 
-4. Inicie o servidor:
+4. **Execute a aplicação**
 
-    - Execute a aplicação dentro da sua IDE ou pelo terminal com:
+    - Inicie a aplicação dentro da sua IDE ou via terminal com:
 
       ```bash
       mvn spring-boot:run
       ```
+
+## 🛠 Melhorias Futuras
+- Implementação de autenticação para usuários
+- Adição de testes unitários e de integração
+- Melhorias no sistema de ranking
+
+---
+
+Este projeto foi desenvolvido com base no evento NLW da Rocketseat. 💜🚀
 
